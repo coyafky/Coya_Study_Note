@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>
+        点击了
+    </button>
+
+    <script>
+
+        let bt =document.querySelector('button')
+        function btn(){
+            alert('点击了')
+        }
+
+        bt = addEventListener('click',btn);
+        bt.removeEventListener('click',btn);
+    </script>
+</body>
+</html>

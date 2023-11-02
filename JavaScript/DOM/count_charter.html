@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea name="" id="comment" cols="30" rows="10" placeholder="在这里评论"></textarea>
+
+    <p id="charCount"></p>
+
+    <script>
+        // 获取元素
+        let comment = document.querySelector('#comment');
+        let charCount = document.querySelector('#charCount');
+
+        // 事件监听
+
+        // 在焦点事件中嵌套监听文本框的输入事件。
+        comment.addEventListener('focus',function(){
+            comment.addEventListener('input',updateCharCOunt())
+        })
+
+        // 函数计数
+
+        comment.addEventListener('blur',function(){
+            comment.removeEventListener('input',updateCharCOunt());
+        })
+
+
+        function updateCharCOunt(){
+            const text = comment.value;
+            const count = text.length;
+            charCount.textContent = `${count} 字`;
+        }
+    </script>
+</body>
+</html>

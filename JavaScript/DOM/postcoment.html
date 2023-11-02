@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="comment-box">
+        <textarea name="" id="comment_input" cols="30" rows="10"></textarea>
+    </div>
+    <div id="commentlist">
+        <div class="comment">1</div>
+        <div class="comment">2</div>
+    </div>
+
+    <script>
+        // 获元素
+        const input = document.querySelector('#comment_input');
+        const list = document.querySelector('#commentlist');
+
+        input.addEventListener('keydown',(event)=>{
+            const comment = document.createElement('div');
+            comment.classList.add('comment');
+            comment.textContent=input.value;
+            list.insertBefore(comment,list.firstChild)
+            // 清空输入框
+            input.value =''
+        })
+        // 事件存在一个逻辑问题
+        // 第一个是在输入的时候同时更新
+        //  第二个是没有实现记录字数的功能
+    </script>
+</body>
+</html>

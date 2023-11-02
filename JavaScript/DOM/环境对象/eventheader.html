@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <p>我不需要变色</p>
+    </ul>
+    <script>
+        // 点击每一个li,dan
+        
+
+        const li = document.querySelector('ul');
+        li.addEventListener('click',function(e){
+            console.log(this.innerHTML);
+           
+            console.log(e.target);
+
+            e.target.style.color = 'red';
+        })
+        // 我的需求，只要点击li就有效果，做一个类型盘带你
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生点名</title>
+</head>
+<body>
+    <h1>学生点名</h1>
+    <button id="startButton">学生点名</button>
+    <p id="Result"></p>
+
+    <script>
+        // 用数组表达要抽到的学生
+        const students = ["Alice", "Bob", "Charlie", "David", "Eve"];
+        // 获取元素
+
+        //
+        const startButton = document.getElementById("startButton");
+        const Result = document.querySelector('p');
+
+        // 随机数表示点名
+        startButton.addEventListener('click',function(){
+            // 随机数获取数字星系
+            const randomIndex = 
+                Math.floor(Math.random() * students.length);
+            // 表达随机学生
+            const randomStudent = students[randomIndex];
+            // 将随机学生打印到台上
+            Result.innerHTML = randomStudent;
+        })
+
+    </script>
+</body>
+</html>

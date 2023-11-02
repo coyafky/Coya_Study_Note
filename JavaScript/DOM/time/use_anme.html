@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea name="" id="" cols="30" rows="10">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur officia quam harum, labore nesciunt odio accusamus consectetur omnis dolor perspiciatis! Mollitia impedit iste atque odit quidem, repellat a accusamus similique!
+    </textarea>
+
+    <button class="btn" disabled>我已经阅读用户协议(5)</button>
+    <script>
+        const btn = document.querySelector('.btn');
+        let i=5;
+        let n =setInterval(function(){
+            i--;
+            btn.innerHTML = '我已经阅读用户协议('+i+')';
+            if(i==0){
+                clearInterval(n);
+                // 定时器停了，按钮可以打开
+                btn.disabled = false;
+                btn.innerHTML="agree"
+            }
+        },1000)
+        // disaled的值是ture,按钮可以点击
+
+
+    </script>
+</body>
+</html>

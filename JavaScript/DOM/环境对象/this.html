@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <button>anniu</button>
+    <script>
+        // function fn(){
+        //     console.log(this);
+        // }
+        // fn();
+        // 每个函数里面都有this对象
+
+        const btn = document.querySelector('button');
+        btn.addEventListener('click',function(){
+            console.log(this);// btn 对象
+            // 一般规则谁调用this执行谁
+            // 箭头函数没有this，this指向的是外层作用域的this
+            // 可改变this执行
+            btn.style.backgroundColor="red";
+
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://twitter.com/yummychiyo/status/1706200507709260029">射射</a>
+
+    <script>
+        // 第一步获取元素
+
+        let link = document.querySelector('a');
+
+        // 事件监听
+        // 传入事件类型和函数
+        link.addEventListener('click', function(event){
+            // 阻跳转止链接
+            event.preventDefault();
+            console.log("链接点击事件被zhuzhi");
+        })
+
+    </script>
+</body>
+</html>

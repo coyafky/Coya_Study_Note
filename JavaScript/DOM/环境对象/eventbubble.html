@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father{
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+        }
+        .son{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="father">
+        <div class="son">
+
+        </div>
+    </div>
+    <script>
+        const father = document.querySelector('.father');
+        const son = father.querySelector('.son');
+
+        document.addEventListener('click', function(){
+            console.log("我是爷爷");
+        },true)
+        father.addEventListener('click',function(){
+            console.log("我是爸爸");
+        },true)
+        son.addEventListener('click',function(e){
+            console.log ("我是儿子");
+            e.stopPropagation(); //阻止冒泡
+        },true)
+    </script>
+</body>
+</html>

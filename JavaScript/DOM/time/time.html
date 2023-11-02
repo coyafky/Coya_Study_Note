@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+
+    <script>
+        let time = document.querySelector('.box');
+        // setInterval(function(){
+        //     console.log("一秒执行1次");
+        // },10000)
+
+
+        function fn(){
+            console.log("10秒执行函数");
+        }
+
+        let n =setInterval(fn,10000); 
+
+        console.log(n);
+        // 加函数名，函数名不加小括号const
+    
+
+        // 不使用const，有重新复制的操作
+
+        // 关闭定时器
+        clearInterval(n);
+    </script>
+</body>
+</html>

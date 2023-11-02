@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f2f2f2;
+    color: #333;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: auto;
+
+
+}
+
+h2{
+    color: pink;
+    font-size: 2rem;
+    text-align: center;
+    opacity: 0.4;
+    /*   opacity: 0.4; 表示什么意思 */
+
+}
+
+form{
+    box-shadow: 0 4px 10px 0 rgba(33, 69, 119, 0.5);
+    max-width: 100%;
+    width: 400px;
+}
+.input{
+    border: none;
+    color: #333;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    display: block;
+    width: 100%;
+
+}
+.input::placeholder{
+    color: aquamarine;
+
+}
+.input:focus {
+    outline-color: rgb(179, 131, 226);
+}
+
+.input:focus::placeholder{
+    color: blue;
+}
+
+.todos{
+    background-color: #333;
+    padding: 0%;
+    margin: 0%;
+    list-style-type: none ;
+
+}
+.todo li{
+    border-top: 1px solid #333;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+
+}
+.todos li.completed {
+    color: #b6b6b6;
+    text-decoration: line-through;
+  }
+  
+  small {
+    color: #b5b5b5;
+    margin-top: 3rem;
+    text-align: center;
+  }

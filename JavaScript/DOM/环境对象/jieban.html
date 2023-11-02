@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="">点击</button>
+    <script>
+        const btn = document.querySelector ('button');
+        btn.onclick = function(){
+            alert('点击了');
+            btn.onclick =null; // 移除事件解绑
+            
+        }
+
+      
+    </script>
+</body>
+</html>

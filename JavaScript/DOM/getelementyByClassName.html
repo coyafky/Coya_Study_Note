@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <ul id="menu">
+            <li class="item">HTML</li>
+            <li class="item">CSS</li>
+            <li class="item highlight">Javascript</li>
+            <li class="item">TypeScript</li>
+        </ul>
+
+    </nav>
+
+    <h1>
+        getElementByClassname
+    </h1>
+
+    <section>
+        <article>
+            <h2 class="secondary">Example1</h2>
+        </article>
+        <article>
+            <h2 class="secondary">Example1</h2>
+        </article>
+    </section>
+
+    <script>
+        let menu = document.getElementById('menu');
+        let item = menu.getElementsByClassName('item');
+        let data = [].map.call(item, item => item.textContent)
+        console.log(data);
+    </script>
+</body>
+
+</html>
