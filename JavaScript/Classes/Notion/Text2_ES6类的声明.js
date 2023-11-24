@@ -12,3 +12,7 @@ class Person{
 const person  = new Person('coya','fly');
 person.sayName();
 console.log(person); // Person { firstname: undefined, lastname: undefined }
+
+// Person {}
+// coya fly
+// Person { firstname: 'coya', lastname: 'fly' }

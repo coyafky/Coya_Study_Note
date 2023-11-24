@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div {
+            width: 3px;
+            height: 200px;
+            background-color: #000;
+            margin: 100px auto;
+            transform-origin: center bottom;    /* 旋转的中心点是底部 */
+            animation: myClock 60s steps(60) infinite;
+        }
+
+        @keyframes myClock {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

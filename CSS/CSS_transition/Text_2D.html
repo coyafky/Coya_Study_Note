@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS 过渡</title>
+  <style>
+    div {
+      margin: 100px 20px;
+      float: left;
+      width: 200px;
+      height: 100px;
+      text-align: center;
+      line-height: 100px;
+      font-size: 25px;
+      color: #fff;
+    }
+
+    div:nth-child(1) {
+      margin-left: 100px;
+      background-color: orange;
+      transition: all .5s;
+    }
+
+    div:nth-child(2) {
+      background-color: pink;
+      transition: all .5s;
+    }
+
+    div:nth-child(3) {
+      background-color: #666;
+      transition: all .5s;
+    }
+
+    div:nth-child(1):hover {
+      transform: scale(2, 1);
+    }
+
+    div:nth-child(2):hover {
+      transform: scale(1, 2);
+    }
+
+    div:nth-child(3):hover {
+      transform: scale(2);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box1">scale(2, 1)</div>
+  <div class="box2">scale(1, 2)</div>
+  <div class="box3">scale(2)</div>
+</body>
+
+</html>
