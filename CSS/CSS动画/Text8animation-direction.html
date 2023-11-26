@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 定义动画关键帧 */
+        @keyframes moveRight {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(100px);
+            }
+        }
+
+        /* 应用动画，并设置不同的播放方向 */
+        .box {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            animation: moveRight 2s ease-in-out infinite;
+        }
+
+        .box-reverse {
+            animation-direction: reverse;
+            /* 反向播放 */
+        }
+
+        .box-alternate {
+            animation-direction: alternate;
+            /* 正向和反向交替播放 */
+        }
+        .box-alternate-reverswe {
+            animation-direction: alternate-reverse;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 不同播放方向的动画演示 -->
+    <div class="box"></div>
+    <div class="box box-reverse"></div>
+    <div class="box box-alternate"></div>
+    <div class="box box-alternate-reverswe">
+
+    </div>
+</body>
+
+</html>

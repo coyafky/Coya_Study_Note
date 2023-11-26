@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 定义动画关键帧 */
+        @keyframes example-animation {
+            0%{
+                transform: translateX(0);
+            }
+            100%{
+                transform: translateX(300px);
+            }
+        }
+
+        /* 定义不同  timing Function 的动画 */
+        .ease{
+            animation: example-animation 2s ease;
+        }
+
+        .ease-in{
+            animation: example-animation 2s ease-in;
+        }
+
+        .ease-out{
+            animation: example-animation 2s ease-out;
+        }
+
+        .ease-in-out{
+            animation: example-animation 2s ease-in-out;
+        }
+
+       
+    </style>
+</head>
+<body>
+      <!-- 不同 timing function 的动画演示 -->
+  <div class="ease">Ease</div>
+  <div class="ease-in">Ease-In</div>
+  <div class="ease-out">Ease-Out</div>
+  <div class="ease-in-out">Ease-In-Out</div>
+</body>
+</html>

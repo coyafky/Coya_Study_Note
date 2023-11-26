@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+       .animate-element {
+           width: 100px;
+           height: 100px;
+           background-color: blue;
+           animation: slide-in 2s;
+           /* 动画持续时间为2秒 */
+       }
+
+       @keyframes slide-in {
+           0% {
+               transform: translateX(-100%);
+           }
+
+           100% {
+               transform: translateX(0%);
+           }
+       }
+   </style>
+</head>
+
+<body>
+   <div class="animate-element">
+       
+   </div>
+</body>
+
+</html>

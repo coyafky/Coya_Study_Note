@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            animation: change-background 3s linear infinite;
+            width: 200px;
+            height: 200px;
+            background: fixed blue
+        }
+
+        @keyframes change-background {
+            0% {
+                background: blue;
+            }
+
+            50% {
+                background: green;
+            }
+
+            100% {
+                background: orange;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+    </div>
+</body>
+
+</html>

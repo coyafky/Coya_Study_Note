@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation Play State Example</title>
+  <style>
+    /* 定义动画关键帧 */
+    @keyframes colorChange {
+      0% {
+        background-color: red;
+      }
+      50% {
+        background-color: blue;
+      }
+      100% {
+        background-color: green;
+      }
+    }
+
+    /* 应用动画效果 */
+    .animated-element {
+      width: 100px;
+      height: 100px;
+      animation: colorChange 3s ease-in-out infinite; /* 无限循环播放 */
+      animation-play-state: running; /* 设置animation-play-state为running */
+    }
+
+    /* 鼠标悬停时暂停动画 */
+    .animated-element:hover {
+      animation-play-state: paused; /* 鼠标悬停时暂停动画 */
+    }
+  </style>
+</head>
+<body>
+  <!-- 包含动画效果的元素 -->
+  <div class="animated-element"></div>
+</body>
+</html>

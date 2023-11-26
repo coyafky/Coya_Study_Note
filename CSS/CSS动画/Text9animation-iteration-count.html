@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 定义动画关键帧 */
+        @keyframes fadeInRotate {
+            0%{
+                opacity: 0;
+                transform: rotate(0deg);
+            }
+
+            50%{
+                opacity: 1;
+            }
+
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .animated-element {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            animation: fadeInRotate 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-element">
+
+    </div>
+</body>
+</html>

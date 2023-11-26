@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>CSS过渡</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #div1{
+            width: 200px;
+            height: 200px;
+            background: #0096dd;
+            margin: 100px auto;
+        }
+        #div1:hover{
+            width: 400px;
+            height: 400px;
+            transition-delay: 150ms;   /*延迟多长时间开始改变（动画延迟时间）*/
+            transition-duration: 1s; /*多长时间内完成改变（动画持续时间）*/
+            /*transition-property: width; /!*选择需要平滑过渡的属性，没选择的属性会瞬间变化*!/*/
+            transition-timing-function: ease-in-out;
+            /*-webkit-transition-delay: 使谷歌和苹果浏览器兼容*/
+            /*-o-transition-delay: 使欧朋浏览器兼容*/
+            /*moz：火狐浏览器；ms：IE浏览器*/
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+</body>
+</html>

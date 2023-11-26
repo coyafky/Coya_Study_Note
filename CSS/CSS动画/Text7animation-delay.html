@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes example-animation {
+            0%{
+                transform: translateX(0);
+            }
+            100%{
+                transform: translateY(100px);
+            }
+        }
+
+        .box{
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            animation: example-animation 2s ease-in-out infinite;
+        }
+
+        .box-delay-1{
+            animation-delay: 1s;
+
+        }
+        .box-delay-2{
+            animation-delay: 2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box box-delay-1"></div>
+    <div class="box box-delay-2"></div>
+</body>
+</html>
