@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login, .password, .submit {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button[type="submit"] {
+  width: 100px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+a.link {
+  color: blue; /* 默认链接颜色 */
+  text-decoration: none; /* 移除下划线 */
+}
+
+a.link:hover {
+  color: red; /* 鼠标悬停时链接颜色 */
+}
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div class="login">
+            <label for="">用户名</label>
+            <input type="text" name="username" id="username" required>
+        </div>
+
+        <div class="password">
+            <label for="">密码</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+
+        <div class="submit">
+            <button type="submit">
+                提交
+            </button>
+        </div>
+
+
+        <br>
+        <a class="link" href="">如果账号未注册，点击注册</a>
+    </form>
+</body>
+
+</html>

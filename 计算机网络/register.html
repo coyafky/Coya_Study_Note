@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            background-color: aqua;
+        }
+
+        .fromm {
+            display: grid;
+            text-align: center;
+            align-items: center;
+            flex-direction: column;
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        /* 在这里添加您的CSS样式 */
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            margin-bottom: 10px;
+        }
+
+        .submit button {
+            /* 样式规则 */
+            background-color: aqua;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit button :hover {
+            background-color: rgb(229, 196, 46);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+
+        /* 其他样式规则 */
+    </style>
+</head>
+
+<body>
+    <h1>
+        登录页面
+    </h1>
+    <form action="" class="formm">
+        <div class="name">
+            <label for="name">CreateName:</label>
+            <input type="text" name="name" id="name">
+        </div>
+
+        <div class="password">
+            <label for="password">CreatePassword</label>
+            <input type="password" name="password" id="password">
+        </div>
+
+        <div class="email">
+            <label for="email">
+                Create Email:
+                <input type="email" name="email" id="email">
+            </label>
+        </div>
+
+        <div class="submit">
+            <button type="submit">
+                Create
+            </button>
+        </div>
+
+        <div class="return">
+            <button onclick="goToLoginPage">
+                返回
+            </button>
+        </div>
+
+
+    </form>
+
+    <script>
+        function goToLoginPage() {
+            window.location.href = "./login.html";
+        }
+
+        // 处理表单提交事件
+
+        document.querySelector(".formm").addEventListener("submit", function(event){
+            event.preventDefault();
+
+            let InputName = document.querySelector("#name").value;
+            let InputPassword = document.querySelector("#password").value;
+        })
+
+        var xhr = new XMLHttpRequest();
+    var url = "your-server-url"; // 替换为实际的服务器URL
+
+    xhr.open("POST", url, true);
+    xhr.setRequestHeader("Content-Type", "application/json");
+
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+                // 注册成功，可以根据服务器返回的数据进行相应的处理
+            } else {
+                // 注册失败，处理错误情况
+            }
+        }
+    };
+
+    var data = JSON.stringify({ "username": username, "password": password });
+    xhr.send(data);
+    </script>
+
+
+</body>
+
+</html>
